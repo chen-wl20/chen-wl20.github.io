@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <title>DreamCinema: Cinematic Transfer with Free Camera and 3D Character</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">GenWorld: Towards Detecting AI-generated Real-world Simulation Videos</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://chen-wl20.github.io/">Weiliang Chen</a>,</span>
+            <span class="author-block">
+              Wenzhao Zheng*</a>,
+            </span>
+            <span class="author-block">
+              Yu Zheng</a>,
+            </span>
+            <span class="author-block">
+              Lei Chen</a>,
+            </span>
+            <span class="author-block">
+                Jie Zhou</a>,
+              </span>
+            <span class="author-block">
+                Jiwen Lu</a>,
+              </span>
+            <span class="author-block">
+              <a href="https://duanyueqi.github.io/">Yueqi Duan†</a>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Tsinghua University</span>
+          </div>
+        
+          <div class="is-size-5 publication-authors">
+            <span style="font-weight: bold;">Arxiv</span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">* Project Leader. † Corresponding author.</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <!-- <a href="./static/pdfs/DreamCinema_paper.pdf" class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://arxiv.org/pdf/2408.12601" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2408.12601"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/kwfRetxDgsg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/chen-wl20/GenWorld?tab=readme-ov-file"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<hr>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/kwfRetxDgsg?rel=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- <video id="teaser" autoplay controls loop playsinline height="100%"> -->
+        <!-- <source src="static/myvideos/supp-video.mp4" type="video/mp4" /> -->
+      <!-- </video> -->
+      <h2 class="subtitle has-text-justified">
+        We have proposed <b>GenWorld</b>, a high-quality, real-world simulated AI-generated video dataset, and SpannDetector, an efficient detection model leveraging multi-view consistency. 
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The flourishing of video generation technologies has endangered the credibility of real-world information and intensified the demand for AI-generated video detectors. 
+            Despite some progress, the lack of high-quality real-world datasets hinders the development of trustworthy detectors. 
+            In this paper, we propose <b>GenWorld</b>, a large-scale, high-quality, and real-world simulation dataset for AI-generated video detection. 
+            GenWorld features the following characteristics: (1) Real-world Simulation: GenWorld focuses on videos that replicate real-world scenarios, 
+            which have a significant impact due to their realism and potential influence; 
+            (2) High Quality: GenWorld employs multiple state-of-the-art video generation models to provide realistic and high-quality forged videos; 
+            (3) Cross-prompt Diversity: GenWorld includes videos generated from diverse generators and various prompt modalities (<i>e.g.,</i> text, image, video), 
+            offering the potential to learn more generalizable forensic features. We analyze existing methods and find they fail to detect high-quality videos generated by world models (i.e., <i>Cosmos</i>), 
+            revealing potential drawbacks of ignoring real-world clues. 
+            To address this, we propose a simple yet effective model, SpannDetector, to leverage multi-view consistency as a strong criterion for real-world AI-generated video detection. 
+            Experiments show that our method achieves superior results, highlighting a promising direction for explainable AI-generated video detection based on physical plausibility. 
+            We believe that GenWorld will advance the field of AI-generated video detection
+          </p>
+        </div>
+        <img src="./static/figs/teaser.png" alt="Teaser Image" height="100%">
+        <!-- <img src="./static/figs/teaser-3d.png"> -->
+        <div class="content has-text-justified">
+        <p>
+          Figure 1.  Most existing AI-generated video datasets consist of cartoon videos even as “real” data, lacking a clear definition of authenticity.
+          This paper proposes a high-quality dataset including only real and generated videos from real-world scenarios (<i>e.g.,</i> driving, navigation,
+          manipulation). <b>GenWorld</b> features three key characteristics: 1) Real-world Simulation, 2) High Quality, and 3) Cross-prompt Diversity, which can serve as a foundation for AI-generated video detection research with practical significance.
+        </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>Pipeline and motivation of Our SpannDetector.</b> SpannDetector is designed based on an in-depth analysis of multi-view
+            consistency in real and AI-generated videos. It integrates a stereo reconstruction model with a temporal memory module to enhance
+            efficiency in consistency detection. An authenticity scorer evaluates the stereo features, and the final video authenticity is determined by
+            averaging these scores across the entire video.
+        </p>        
+        </div>
+        <img src="./static/figs/pipeline.png">
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Cinematic Transfer Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>Comparisons to the SOTAs in F1 score (F1) and average precision (AP) on the Train-Test Evaluation.</b>
+        </p>        
+        </div>
+        <img src="./static/figs/main_results.png">
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+        <!-- @misc{chen2024dreamcinemacinematictransferfree,
+      title={DreamCinema: Cinematic Transfer with Free Camera and 3D Character}, 
+      author={Weiliang Chen and Fangfu Liu and Diankun Wu and Haowen Sun and Haixu Song and Yueqi Duan},
+      year={2024},
+      eprint={2408.12601},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.12601}, 
+} -->
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>This website is constructed using the source code provided by <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, and we are grateful for their template.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
