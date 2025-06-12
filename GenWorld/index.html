@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-  <title>DreamCinema: Cinematic Transfer with Free Camera and 3D Character</title>
+  <title>GenWorld: Towards Detecting AI-generated Real-world Simulation Videos</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -128,12 +128,23 @@
   </div>
 </section>
 
-
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay controls loop playsinline height="100%">
+          <source src="static/myvideos/supp-video.mp4" type="video/mp4" />
+        </video>
+        <h2 class="subtitle has-text-justified">
+          <b>Make-Your-3D</b> is a new subject-driven 3D generation framework that can personalize your 3D assets from only a wild image.
+        </h2>
+      </div>
+    </div>
+  </section>
 <hr>
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
+      <!-- <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Video</h2>
           <div class="publication-video">
@@ -141,10 +152,10 @@
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
-      </div>
-      <!-- <video id="teaser" autoplay controls loop playsinline height="100%"> -->
-        <!-- <source src="static/myvideos/supp-video.mp4" type="video/mp4" /> -->
-      <!-- </video> -->
+      </div> -->
+      <video id="teaser" autoplay controls loop playsinline height="100%">
+        <source src="static/videos/genworld_demo_mp4.mp4" type="video/mp4" />
+      </video>
       <h2 class="subtitle has-text-justified">
         We have proposed <b>GenWorld</b>, a high-quality, real-world simulated AI-generated video dataset, and SpannDetector, an efficient detection model leveraging multi-view consistency. 
       </h2>
