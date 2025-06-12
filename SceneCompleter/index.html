@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <title>SceneCompleter: Dense 3D Scene Completion for Generative Novel View Synthesis</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SceneCompleter: Dense 3D Scene Completion for Generative Novel View Synthesis</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://chen-wl20.github.io/">Weiliang Chen</a>,</span>
+            <span class="author-block">
+              Jiayi Bi</a>,
+            </span>
+            <span class="author-block">
+              Yuanhui Huang</a>,
+            </span>
+            <span class="author-block">
+              Wenzhao Zheng*</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://duanyueqi.github.io/">Yueqi Duan†</a>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Tsinghua University</span>
+          </div>
+        
+          <div class="is-size-5 publication-authors">
+            <span style="font-weight: bold;">Arxiv</span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">* Project Leader. † Corresponding author.</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <!-- <a href="./static/pdfs/DreamCinema_paper.pdf" class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://arxiv.org/pdf/2408.12601" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2408.12601"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtu.be/kwfRetxDgsg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://github.com/chen-wl20/SceneCompleter=readme-ov-file"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/kwfRetxDgsg?rel=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+      <video id="teaser" autoplay controls loop playsinline height="100%">
+        <source src="static/videos/scene_comp.mp4" type="video/mp4" />
+      </video>
+      <h2 class="subtitle has-text-justified">
+        We propose <b>SceneCompleter</b>, a 3D-consistent generative novel view synthesis framework based on dense scene completion. 
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Generative models have gained significant attention in novel view synthesis (NVS) by alleviating the reliance on dense multi-view captures. However, existing methods typically fall into a conventional paradigm, where generative models first complete missing areas in 2D, followed by 3D recovery techniques to reconstruct the scene, which often results in overly smooth surfaces and distorted geometry, as generative models struggle to infer 3D structure solely from RGB data. In this paper, we propose SceneCompleter, a novel framework that achieves 3D-consistent generative novel view synthesis through dense 3D scene completion. SceneCompleter achieves both visual coherence and 3D-consistent generative scene completion through two key components: (1) a geometry-appearance dual-stream diffusion model that jointly synthesizes novel views in RGBD space; (2) a scene embedder that encodes a more holistic scene understanding from the reference image. By effectively fusing structural and textural information, our method demonstrates superior coherence and plausibility in generative novel view synthesis across diverse datasets. 
+          </p>
+        </div>
+        <img src="./static/figs/teaser.png" alt="Teaser Image" height="100%">
+        <!-- <img src="./static/figs/teaser-3d.png"> -->
+        <div class="content has-text-justified">
+        <p>
+          Figure 1.  Most existing AI-generated video datasets consist of cartoon videos even as “real” data, lacking a clear definition of authenticity.
+          This paper proposes a high-quality dataset including only real and generated videos from real-world scenarios (<i>e.g.,</i> driving, navigation,
+          manipulation). <b>GenWorld</b> features three key characteristics: 1) Real-world Simulation, 2) High Quality, and 3) Cross-prompt Diversity, which can serve as a foundation for AI-generated video detection research with practical significance.
+        </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>Framework of SceneCompleter.</b> We first extract the geometry-appearance clues from the reference view using an unconstrained
+            stereo reconstruction method. Then, we employ a Geometry-Appearance Dual-Stream Diffusion model to generate novel view in 3D space,
+            conditioned on the extracted geometry-appearance clues. After generating the 3D novel view, we align the synthesized geometry with the
+            original 3D structure to achieve 3D scene completion. Notably, this process can be iterated to progressively generate a larger 3D scene.
+        </p>        
+        </div>
+        <img src="./static/figs/pipeline.png">
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>Qualitative comparison of zero-shot novel view synthesis on Tanks-and-Temples, RealEstate10K, DL3DV10K, CO3D datasets.</b>  Our SceneCompleter achieves more realistic and 3D-consistent novel view synthesis.
+        </p>        
+        </div>
+        <img src="./static/figs/qualitative_results.png">
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>Quantitative comparison of zero-shot novel view synthesis on Tanks-and-Temples, RealEstate10K, DL3DV10K, and CO3D dataset.</b> Our SceneCompleter outperforms baselines across most image quality and pose accuracy metrics.
+        </p>        
+        </div>
+        <img src="./static/figs/quantitative_results.png">
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+        <!-- @misc{chen2024dreamcinemacinematictransferfree,
+      title={DreamCinema: Cinematic Transfer with Free Camera and 3D Character}, 
+      author={Weiliang Chen and Fangfu Liu and Diankun Wu and Haowen Sun and Haixu Song and Yueqi Duan},
+      year={2024},
+      eprint={2408.12601},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.12601}, 
+} -->
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>This website is constructed using the source code provided by <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, and we are grateful for their template.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
